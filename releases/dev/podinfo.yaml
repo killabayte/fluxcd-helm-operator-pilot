@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: yaroslavkostyannikov/podinfo
-      tag: dev-hdtwcel9
+      tag: dev-kb9lm91e
     replicaCount: 1
     hpa:
       enabled: false
