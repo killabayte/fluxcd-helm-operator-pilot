@@ -1,0 +1,20 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: yknginx-dev
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:dev-*
+spec:
+  releaseName: yknginx-dev
+  chart:
+    git: git@github.com:killabayte/fluxcd-helm-operator-pilot
+    path: charts/yknginx
+    ref: master
+  values:
+    image:
+      repository: yaroslavkostyannikov/yknginx
+      tag: dev-c2e7513
+    replicaCount: 1
