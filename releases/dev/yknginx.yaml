@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: yaroslavkostyannikov/yknginx
-      tag: dev-c2e7513
+      tag: dev-3157e2c
     replicaCount: 1
