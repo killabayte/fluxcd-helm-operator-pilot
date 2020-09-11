@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: yaroslavkostyannikov/yknginx
-      tag: nginx-blue-0.0.2
+      tag: nginx-blue-0.0.1
     replicaCount: 1
