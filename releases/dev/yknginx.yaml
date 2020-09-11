@@ -6,7 +6,7 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:nginx-green-*
+    filter.fluxcd.io/chart-image: glob:nginx-*
 spec:
   releaseName: yknginx-dev
   chart:
@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: yaroslavkostyannikov/yknginx
-      tag: nginx-green-0.0.2
-    replicaCount: 1
+      tag: nginx-ultramarines
+    replicaCount: 10
